@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detail_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/animation_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/detail_title_bg"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:textColor="@color/detail_title"
+            android:textSize="@dimen/detail_title" /> 
+
+        <FrameLayout
+            android:id="@+id/image_area"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/detail_imagearea_bg" >
+
+            <ImageView
+                android:id="@+id/image_earth"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/earth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#7f000000"
+                android:id="@+id/text_movesequence"
+                android:text="Change Layout"
+                android:textColor="@color/detail_title"
+                android:textSize="20sp" />
+        </FrameLayout>
+ 
+    </LinearLayout> 
+ </ScrollView>  

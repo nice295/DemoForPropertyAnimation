@@ -1,0 +1,199 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detail_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/animation_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/detail_title_bg"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:textColor="@color/detail_title"
+            android:textSize="@dimen/detail_title" />
+
+        <Button
+            android:id="@+id/button_for_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate" />
+
+        <Button
+            android:id="@+id/button_for_rotate_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="35dp"
+            android:text="rotate 90" />
+
+        <RelativeLayout
+            android:id="@+id/value_area"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/detail_imagearea_bg4" >
+
+            <Button
+                android:id="@+id/btn_startAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start ValueAnimator" />
+ 
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="Interpolator:"
+                android:layout_toRightOf="@id/btn_startAnim"
+                android:layout_alignBottom="@id/btn_startAnim" 
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/spin_interpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/btn_startAnim"/>
+
+            <com.example.demoforpropertyanimation.view.ValueAnimatorDrawView 
+                android:layout_below="@id/spin_interpolator"
+                android:layout_width="match_parent"
+                android:id="@+id/value_animator_drawview"
+                android:layout_height="150dp" />
+            
+            <com.example.demoforpropertyanimation.view.ValueAnimatorV4DrawView 
+                android:layout_below="@id/spin_interpolator"
+                android:layout_width="match_parent"
+                android:id="@+id/value_animator_v4_drawview"
+                android:layout_height="150dp" />
+             
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_blue_light"
+                android:text="ValueAnimator"
+                android:id="@+id/value_object"
+                android:textColor="@color/detail_title"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/image_area"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/detail_imagearea_bg" >
+
+            <ImageView
+                android:id="@+id/image_earth"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/earth" />
+
+            <TextView
+                android:id="@+id/text_movesequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#7f000000"
+                android:text="Animation Sequence!"
+                android:textColor="@color/detail_title"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <com.example.demoforpropertyanimation.view.DrawView
+            android:id="@+id/drawview1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <FrameLayout
+            android:id="@+id/move_area2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/detail_imagearea_bg2" >
+
+            <ImageView
+                android:id="@+id/image_uranus"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/uranus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#7f000000"
+                android:text="Animation Together"
+                android:textColor="@color/detail_title"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/anim_area"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/detail_imagearea_bg3" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp" >
+
+            <Button
+                android:id="@+id/btn_anim1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Anim1" />
+
+            <Button
+                android:id="@+id/btn_anim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:text="Anim2" />
+
+            <Button
+                android:id="@+id/btn_anim3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="200dp"
+                android:text="Anim3" />
+
+            <Button
+                android:id="@+id/btn_anim4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:text="Anim4" />
+
+            <Button
+                android:id="@+id/btn_anim5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:text="Anim5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#7f000000"
+                android:text="Some Complicated"
+                android:textColor="@color/detail_title"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

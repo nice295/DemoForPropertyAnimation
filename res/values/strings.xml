@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DemoForPropertyAnimation</string>
+    <string name="title_animation_detail">Animation Detail</string> 
+     
+    <string-array name="animation_type_array">
+        <item>Old animations</item>
+        <item>Property animations</item>
+        <item>Property animations for v4Support</item>
+        <item>Kitkat Transitions</item> 
+    </string-array>
+    
+      <string-array name="animation_type_array_old">
+        <item>Old animations</item>
+        <item>Property animations</item>
+        <item>Property animations for v4Support</item> 
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+</resources>

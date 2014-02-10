@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="detail_bg">#c7b299</color>
+    <color name="detail_title">#eeeeee</color>
+    <color name="detail_title_bg">#0099cc</color>
+     <color name="detail_imagearea_bg2">#2299dd</color>
+     <color name="detail_imagearea_bg3">#aaaaaa</color>
+     <color name="detail_imagearea_bg4">#ff9999</color>
+ 	<color name="detail_imagearea_bg">#222222</color>
+ 	<color name="detail_drawview_bg">#e63232</color>
+</resources>
