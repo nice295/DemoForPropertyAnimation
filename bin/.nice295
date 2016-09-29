@@ -1,0 +1,19 @@
+SineIn (가속): 나타나는 경우 사용
+SineOut(감속): 객체가 사라질 경우 사용
+SineInOut(가감속): 화면안에서 움직일 경우 사용
+
+ObjectAnimator View_anim_scaleY = ObjectAnimator.ofFloat(A_ImageView, "scaleY", 0.4f, 1f);
+ObjectAnimator View_anim_scaleX = ObjectAnimator.ofFloat(A_ImageView, "scaleX", 0.4f, 1f);
+ObjectAnimator View_anim_alpha = ObjectAnimator.ofFloat(A_ImageView, "alpha", 0f, 1f);
+ 
+AnimatorSet View_anim_Set = new AnimatorSet();
+View_anim_Set.playTogether(View_anim_scaleX, View_anim_scaleY);
+View_anim_Set.setDuration(300);
+ 
+View_anim_Set.setInterpolator(PathInterpolatorCompat.create(0.33f, 0f, 0.83f, 0.83f)); // SineIn33
+// or setInterpolator(new SineInOut60());
+View_anim_Set.start();
+ 
+View_anim_alpha.setStartDelay(100);
+View_anim_alpha.setDuration(200);
+View_anim_alpha.start();
